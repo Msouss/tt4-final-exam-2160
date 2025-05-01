@@ -156,7 +156,7 @@ Each question is worth 0.5 points. Total: **10 points**
    - **B) Stops and removes containers, networks, volumes**  
    - C) Restarts all containers  
    - D) Clears Docker images  
-
+TEST
 ---
 
 ### 💻 **Part II – Final Project (10 points)**
