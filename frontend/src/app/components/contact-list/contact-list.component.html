@@ -1,0 +1,22 @@
+<h2>Contact List</h2>
+
+<table border="1" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Favorite</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.fullName }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.phone }}</td>
+      //<td>{{ contact.isFavorite ? '✅' : '❌' }}</td> 
+      <td><button (click)="deleteContact(contact.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

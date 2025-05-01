@@ -1,0 +1,20 @@
+<h2>Add New Contact</h2>
+
+<form (ngSubmit)="addContact()" #contactForm="ngForm">
+  <label>Full Name:</label>
+  <input type="text" [(ngModel)]="newContact.fullName" name="fullName" required /><br />
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="newContact.email" name="email" required /><br />
+
+  <label>Phone:</label>
+  <input type="text" [(ngModel)]="newContact.phone" name="phone" required /><br />
+
+  <label>
+    <input type="checkbox" [(ngModel)]="newContact.isFavorite" name="isFavorite" />
+    Favorite
+  </label><br />
+
+  <button type="submit">Add Contact</button>
+</form>
+
